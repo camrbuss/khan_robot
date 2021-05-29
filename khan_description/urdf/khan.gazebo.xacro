@@ -28,6 +28,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <xacro:include filename="$(find khan_description)/urdf/khan.urdf.xacro" />
 
   <!-- Gazebo plugin for ROS Control -->
+  <!-- TODO: Determine if this is necessary for ROS2 -->
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
       <robotNamespace>/</robotNamespace>

@@ -3,6 +3,6 @@
 # a real system, but this is useful as a learning example of both ROS
 # pub/sub and quadrature encoding.
 # Author: Jason Ziglar <jpz@vt.edu>
-Header header
-std_msgs/Bool state_a
-std_msgs/Bool state_b
+std_msgs/Header header
+bool state_a
+bool state_b
