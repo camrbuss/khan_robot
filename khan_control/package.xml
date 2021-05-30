@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<package>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
   <name>khan_control</name>
   <version>0.0.1</version>
   <description>KHAN controller configurations</description>
@@ -14,33 +15,26 @@
 
   <url type="website">https://github.com/FleetRobotics/khan_robot</url>
 
-  <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>roslaunch</build_depend>
-  <build_depend>roscpp</build_depend>
-  <build_depend>sensor_msgs</build_depend>
-  <build_depend>hardware_interface</build_depend>
-  <build_depend>controller_manager</build_depend>
-  <build_depend>dynamic_reconfigure</build_depend>
-  <build_depend>transmission_interface</build_depend>
-  <build_depend>control_toolbox</build_depend>
-  <build_depend>urdf</build_depend>
-  <run_depend>transmission_interface</run_depend>
-  <run_depend>control_toolbox</run_depend>
-  <run_depend>urdf</run_depend>
-  <run_depend>roscpp</run_depend>
-  <run_depend>sensor_msgs</run_depend>
-  <run_depend>hardware_interface</run_depend>
-  <run_depend>controller_manager</run_depend>
-  <run_depend>dynamic_reconfigure</run_depend>
-  <run_depend>diff_drive_controller</run_depend>
-  <run_depend>joint_state_controller</run_depend>
-  <run_depend>joint_trajectory_controller</run_depend>
-  <run_depend>joy</run_depend>
-  <run_depend>robot_localization</run_depend>
-  <run_depend>controller_manager</run_depend>
-  <run_depend>teleop_twist_joy</run_depend>
-  <run_depend>twist_mux</run_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <!-- TODO: Make sure the dependencies are met once converted to ros2_control -->
+  <exec_depend>transmission_interface</run_depend>
+  <exec_depend>control_toolbox</run_depend>
+  <exec_depend>urdf</run_depend>
+  <exec_depend>roscpp</run_depend>
+  <exec_depend>sensor_msgs</run_depend>
+  <exec_depend>hardware_interface</run_depend>
+  <exec_depend>controller_manager</run_depend>
+  <exec_depend>dynamic_reconfigure</run_depend>
+  <exec_depend>diff_drive_controller</run_depend>
+  <exec_depend>joint_state_controller</run_depend>
+  <exec_depend>joint_trajectory_controller</run_depend>
+  <exec_depend>joy</run_depend>
+  <exec_depend>robot_localization</run_depend>
+  <exec_depend>controller_manager</run_depend>
+  <exec_depend>teleop_twist_joy</run_depend>
+  <exec_depend>twist_mux</run_depend>
 
   <export>
+    <build_type>ament_cmake</build_type>
   </export>
 </package>
